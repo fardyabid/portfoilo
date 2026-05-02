@@ -79,7 +79,7 @@ body{font-family:var(--font-sans);margin:0;background:var(--bg);color:var(--fg);
 .cta-actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;align-items:center}
 
 /* Utilities */
-.muted{color:var(--muted);font-size:0.95rem}
+.muted{color:var(--muted-foreground);font-size:0.95rem;opacity:0.8}
 .footer{border-top:1px solid var(--border);padding:24px 0;text-align:center;color:var(--muted)}
 
 /* Headings */
