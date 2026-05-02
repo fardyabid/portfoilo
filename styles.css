@@ -1,0 +1,38 @@
+:root{
+  --bg: #fbfbfb;
+  --fg: #0f1720;
+  --primary:#0f5132;
+  --accent:#0ea5a4;
+  --muted:#6b7280;
+  --card:#ffffff;
+  --radius:12px;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0;background:var(--bg);color:var(--fg);line-height:1.6}
+.container{max-width:1100px;margin:0 auto;padding:24px}
+.nav{position:sticky;top:0;background:rgba(255,255,255,0.85);backdrop-filter:blur(6px);border-bottom:1px solid #e6e6e6}
+.nav-inner{display:flex;align-items:center;justify-content:space-between}
+.brand{font-size:1.25rem;margin:0;color:var(--primary)}
+.nav-links a{margin-left:18px;color:var(--fg);text-decoration:none}
+.hero{padding:48px 0;background:linear-gradient(135deg,#ffffff,#f1f8f8)}
+.hero-grid{display:grid;grid-template-columns:1fr;gap:24px;align-items:center}
+.hero-image img{width:100%;height:auto;border-radius:16px;object-fit:cover}
+.hero-content h2{font-size:2rem;margin:0 0 12px}
+.eyebrow{color:var(--accent);font-weight:600;text-transform:uppercase;margin:0 0 8px}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none}
+.btn-outline{display:inline-block;border:2px solid var(--primary);color:var(--primary);padding:8px 14px;border-radius:8px;text-decoration:none}
+.section{padding:56px 0}
+.alt{background:rgba(14,165,164,0.06)}
+.two-col{display:grid;grid-template-columns:1fr;gap:20px}
+@media(min-width:800px){.hero-grid{grid-template-columns:420px 1fr}.two-col{grid-template-columns:1fr 1fr}}
+.card{background:var(--card);border:1px solid #ececec;padding:18px;border-radius:var(--radius);margin-bottom:16px}
+.feature{border-left:4px solid var(--accent);padding-left:12px;margin-bottom:12px}
+.muted{color:var(--muted);font-size:0.95rem}
+.cta{text-align:center;padding:48px 0}
+.cta-actions .btn{margin-right:12px}
+.footer{border-top:1px solid #e6e6e6;padding:24px 0;text-align:center;color:var(--muted)}
+
+/* small utilities */
+h3{font-size:1.5rem;margin-bottom:18px}
+h4{margin:0 0 8px}
+ul{margin:8px 0 0 18px}
